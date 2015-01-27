@@ -81,7 +81,7 @@ h2{
 
 /*---------SERVICES-----------*/
 .page-services{
-	background-color:  #b24a50;
+	background:  #b24a50 url(../assets/services_back.png) no-repeat 0 0;
 	padding-top:19%;
 	text-align: center;
 }
@@ -98,13 +98,43 @@ h2{
 	padding-bottom:12%;
 }
 .services-badge{
-	height:300px;
 	border-radius: 5px;
 	margin-bottom:4%;
+	padding-top:190px;
+	padding-bottom: 40px;
+}
+.services-badge p{
+	color:  #fefefe;
+	padding-top: 45px;
+}
+.badge-header{
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 58px;
+	text-transform: uppercase;
 }
 .services-badge-researching{
 	background: url(../assets/badge_lightball.png), url(../assets/badge_countur.png);
+	background-color: rgba(200, 83, 90, 0.8);
 	background-repeat: no-repeat;
 	background-position: center 60px, center 24px;
+}
+.services-badge-design{
+	background: url(../assets/badge_wand.png), url(../assets/badge_countur.png);
+	background-color: rgba(200, 83, 90, 0.8);
+	background-repeat: no-repeat;
+	background-position: center 60px, center 24px;
+}
+.services-badge-development{
+	background: url(../assets/badge_gears.png), url(../assets/badge_countur.png);
+	background-color: rgba(200, 83, 90, 0.8);
+	background-repeat: no-repeat;
+	background-position: center 60px, center 24px;
+}
+.services-badge-launch{
+	background: url(../assets/badge_rocket.png), url(../assets/badge_countur.png);
+	background-color: rgba(200, 83, 90, 0.8);
+	background-repeat: no-repeat;
+	background-position: center 66px, center 24px;
 }
 /*---------END SERVICES-----------*/
