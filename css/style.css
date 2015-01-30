@@ -76,13 +76,14 @@ h2{
 /* END CAROUSEL */
 
 .container{
-	max-width:1100px;
+	max-width:1200px;
 }
 
 /*---------SERVICES-----------*/
 .page-services{
 	background:  #b24a50 url(../assets/services_back.png) no-repeat 0 0;
-	padding-top:19%;
+	padding-top:5%;
+	padding-bottom:5%;
 	text-align: center;
 }
 .page-services h1,
@@ -95,13 +96,13 @@ h2{
 .page-services > .container > p{
 	color:  #ffccd0;
 	line-height: 2.4rem;
-	padding-bottom:12%;
+	padding-bottom:1%;
 }
 .services-badge{
 	border-radius: 5px;
 	margin-bottom:4%;
 	padding-top:190px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 .services-badge p{
 	color:  #fefefe;
@@ -138,3 +139,133 @@ h2{
 	background-position: center 66px, center 24px;
 }
 /*---------END SERVICES-----------*/
+
+/*---------ABOUT-----------*/
+
+.page-about{
+	background:  #665464 url(../assets/about_back.png) no-repeat;
+	background-position: bottom;
+	padding-top:5%;
+	text-align: center;
+	padding-bottom:5%;
+	
+}
+.page-about h1{
+	text-transform: uppercase;
+}
+.page-about > .container > p{
+	color:  #e6d1e3;
+	line-height: 2.4rem;
+	padding-bottom:1%;
+	margin-bottom:59px;
+}
+.meet-the-team{
+	background-color:  #a1ca6c;
+	width: 276px;
+	height: 56px;
+	margin:0 auto;
+	font-size: 25px;
+	text-transform:uppercase;
+	padding-top:10px;
+	margin-bottom: 62px;
+	position: relative;
+	border-radius: 5px;
+}
+.meet-the-team:after{
+	content:' ';
+	display:block;
+	position:absolute;
+	top:56px;
+	left:123px;
+	border: 15px solid transparent;
+  border-top: 15px solid #a1ca6c;
+}
+.team-badge{
+	border-radius: 5px;
+	background-color:  rgba(77, 63, 75, 0.5);
+	padding-top:48px;
+	margin-bottom:31px;
+}
+.team-photo-border{
+	border: 4px solid #a1859e;
+	border-radius: 50%;
+	background-color:  #ffffff;
+	width: 160px;
+	height: 160px;
+	overflow:hidden;
+	margin:0 auto;
+	background-image: url(../assets/Userimg.png);
+	background-repeat: no-repeat;
+	margin-bottom:7%;
+}
+.team-photo-border > img{
+	
+}
+.team-name{
+	display: block;
+	text-transform: uppercase;
+	color:  #c7b6c5;
+	font-size: 25px;
+	font-weight: 900;
+}
+.team-job-title{
+	display: block;
+	color:  #a1ca6c;
+	margin-bottom:37px;
+}
+.social-icons{
+	display: inline-block;
+	border-radius: 50%;
+	background-color:  #a1859e;
+	width: 31px;
+	height: 31px;
+	margin:0 10px 32px;
+}
+.social-icons-fb{
+	background-image: url(../assets/social_icons.png);
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+.social-icons-tw{
+	background-image: url(../assets/social_icons.png);
+	background-repeat: no-repeat;
+	background-position: -39px;
+}
+.social-icons-gplus{
+	background-image: url(../assets/social_icons.png);
+	background-repeat: no-repeat;
+	background-position: -90px;
+}
+.social-icons-in{
+	background-image: url(../assets/social_icons.png);
+	background-repeat: no-repeat;
+	background-position: -139px;
+}
+
+/*---hover effect on team-badge---*/
+.team-badge:hover .team-photo-border{
+	border-color: #df5c64;
+	background-image: url(../assets/Userimgred.png);
+	background-position: 1px 0;
+}
+.team-badge:hover .team-name{
+	color: #fff;
+}
+.team-badge:hover .team-job-title{
+	color: #ff8973;
+}
+.team-badge:hover .social-icons-fb{
+	background-color: #4f689e;
+}
+.team-badge:hover .social-icons-tw{
+	background-color: #74c7d5;
+}
+.team-badge:hover .social-icons-gplus{
+	background-color: #df5c64;
+}
+.team-badge:hover .social-icons-in{
+	background-color: #3e61af;
+}
+/*---END hover effect on team-badge---*/
+
+/*---------END ABOUT-----------*/
