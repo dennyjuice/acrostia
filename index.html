@@ -10,8 +10,8 @@
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	
-	<link href="css/onepage-scroll.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	<!--<link href="css/onepage-scroll.css" rel="stylesheet">-->
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -105,8 +105,9 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!-- /.carousel -->
+    </div>
 	</section>
+	<!-- /.carousel -->
 	
 	<!--Services----------------------->
 	<section class="page-services row" id="services">
@@ -198,12 +199,62 @@
 		<div class="work-title">
 			<span>PORTFOLIO</span>
 			<ul class="work-title-filter">
-				<li>All</li>
-				<li>Photography</li>
-				<li>Logo design</li>
-				<li>Web design</li>
+				<li class="work-filter-selected"><a rel="all">All</a></li>
+				<li><a rel="photo">Photography</a></li>
+				<li><a rel="logo">Logo design</a></li>
+				<li><a rel="web">Web design</a></li>
 			</ul>
 		</div>
+		<ul class="work-gallery">
+			<li class="image-box" rel="photo">
+				<a href="assets/work_img1.jpg" title="Aenean a elit">
+					<img src="assets/work_img1.jpg" alt="" width="260px" height="200px">
+					<div class="img-hover"></div></a>
+				<div class="img-description">Aenean a elit</div>
+			</li>
+			<li class="image-box" rel="photo">
+				<a href="assets/work_img1.jpg" title="Aliquam">
+					<img src="assets/work_img1.jpg" alt="" width="260px" height="200px">
+					<div class="img-hover"></div></a>
+				<div class="img-description">Aliquam</div>
+			</li>
+			<li class="image-box" rel="logo">
+				<a href="assets/work_img1.jpg" title="Suspendisse libero">
+					<img src="assets/work_img1.jpg" alt="" width="260px" height="200px">
+					<div class="img-hover"></div></a>
+				<div class="img-description">Suspendisse libero</div>
+			</li>
+			<div class="image-box" rel="web">
+				<a href="assets/work_img1.jpg" title="Maecenas fringilla">
+					<img src="assets/work_img1.jpg" alt="" width="260px" height="200px">
+					<div class="img-hover"></div></a>
+				<div class="img-description">Maecenas fringilla</div>
+			</div>
+			<li class="image-box" rel="web">
+				<a href="assets/work_img1.jpg" title="Donec vehicula">
+					<img src="assets/work_img1.jpg" alt="" width="260px" height="200px">
+					<div class="img-hover"></div></a>
+				<div class="img-description">Donec vehicula</div>
+			</li>
+			<li class="image-box" rel="photo">
+				<a href="assets/work_img1.jpg" title="Ut et sapien">
+					<img src="assets/work_img1.jpg" alt="" width="260px" height="200px">
+					<div class="img-hover"></div></a>
+				<div class="img-description">Ut et sapien</div>
+			</li>
+			<li class="image-box" rel="web">
+				<a href="assets/work_img1.jpg" title="quis malesuada">
+					<img src="assets/work_img1.jpg" alt="" width="260px" height="200px">
+					<div class="img-hover"></div></a>
+				<div class="img-description">quis malesuada</div>
+			</li>
+			<li class="image-box" rel="logo">
+				<a href="assets/work_img1.jpg" title="Vestibulum ante">
+					<img src="assets/work_img1.jpg" alt="" width="260px" height="200px">
+					<div class="img-hover"></div></a>
+				<div class="img-description">Vestibulum ante</div>
+			</li>
+		</ul>
 	</div>
 	</section>
 <!---------------end Work---------------------->
@@ -254,11 +305,13 @@ Ac0stia
 	</footer>
 <!---------------end social---------------------->
 	</div>
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<!--<script src="js/jquery.onepage-scroll.min.js"></script>-->
+	<script src="js/magnific-popup.js"></script>
 	
 	<script src ="js/script.js"></script>
 </body>
