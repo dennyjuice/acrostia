@@ -42,40 +42,34 @@ jQuery(document).ready(function($){
 	$('.img-hover').hide();
 	$('.image-box').hover(function(){
 			$('.img-hover', this).show();
+			$('img', this).css({'-webkit-filter' : 'blur(8px)',
+												 'filter' : 'blur(8px)'});
 		}, function(){
 			$('.img-hover', this).hide();
+			$('img', this).css({'-webkit-filter' : 'blur(0)',
+												 'filter' : 'blur(0)'});
 		}
 	);
 	/*------END Hover effect on img in gallery--------*/
 	
 	/*------------portfolio filter--------------*/
+	//var imgHeight = $('.image-box').height();
+	
 	$('.work-title-filter li a').click(function() {
 
     $('.work-title-filter li').removeClass('work-filter-selected');
     $(this).parent('li').addClass('work-filter-selected');
 		
-		var imgHeight = $('.image-box').height();
 		var thisItem    = $(this).attr('rel');
 		
 		if(thisItem !== "all") {
- 
-    $('.image-box[rel='+thisItem+']').stop()
-                       .animate({'height' : "260px",
-                         'opacity' : 1
-                    }, 500).show();
-                                                         
-    $('.image-box[rel!='+thisItem+']').stop()
-                    .animate({'height' : 0,
-                         'opacity' : 0
-                    }, 500).hide();
+			$('.image-box[rel='+thisItem+']').stop()
+				.animate({'opacity' : 1}, 500).show();
+			$('.image-box[rel!='+thisItem+']').stop()
+				.animate({'opacity' : 0}, 500).hide();
 		} else {
-     
-    $('.image-box').stop()
-             .animate({'opacity' : 1,
-                 'height' : "260px"
-            }, 500).show();
+			$('.image-box').stop().animate({'opacity' : 1}, 500).show();
 		}
-
 	});
 	/*------------END portfolio filter--------------*/
 });
