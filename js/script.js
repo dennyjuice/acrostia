@@ -53,23 +53,27 @@ jQuery(document).ready(function($){
 	/*------END Hover effect on img in gallery--------*/
 	
 	/*------------portfolio filter--------------*/
-	//var imgHeight = $('.image-box').height();
+	var tempItem = '[rel=' + $('.work-filter-selected').children('a').attr('rel') + ']';
 	
 	$('.work-title-filter li a').click(function() {
-
+		
     $('.work-title-filter li').removeClass('work-filter-selected');
     $(this).parent('li').addClass('work-filter-selected');
 		
-		var thisItem    = $(this).attr('rel');
-		
-		if(thisItem !== "all") {
-			$('.image-box[rel='+thisItem+']').stop()
-				.animate({'opacity' : 1}, 500).show();
-			$('.image-box[rel!='+thisItem+']').stop()
-				.animate({'opacity' : 0}, 500).hide();
-		} else {
-			$('.image-box').stop().animate({'opacity' : 1}, 500).show();
+		var thisItem = '[rel=' + $(this).attr('rel') + ']';
+	
+		if (thisItem == "[rel=all]") {
+			thisItem = "";
 		}
+
+		if (tempItem == "[rel=all]") {
+			tempItem = "";
+		}
+	
+		$('.image-box' + tempItem).animate({'opacity' : 0}, 500).hide();
+		$('.image-box' + thisItem).animate({'opacity' : 1}, 500).show();
+
+		tempItem = thisItem;
 	});
 	/*------------END portfolio filter--------------*/
 });
