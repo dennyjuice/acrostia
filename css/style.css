@@ -48,9 +48,26 @@ h2{
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
-	top:25%;
-	bottom:50px;
+	top:45%;
+	bottom:39%;
 	max-width:840px;
+	padding-right:20px;
+	border-radius: 4px;
+	background-color:  rgba(255, 255, 255, 0.3);
+}
+.carousel-maxheadline{
+	color:  #74c7d5;
+	font-size: 47px;
+	font-weight: 900;
+	line-height: 36px;
+	text-align: right;
+}
+.carousel-headline{
+	color:  #74c7d5;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 18px;
+	text-align: right;
 }
 .carousel-caption > div{
 	float:left;
@@ -77,6 +94,9 @@ h2{
 
 .container{
 	max-width:1200px;
+}
+body section{
+	background-attachment: fixed;
 }
 
 /*---------SERVICES-----------*/
@@ -363,9 +383,9 @@ h2{
 	border-top-right-radius: 4px;
 	background:  rgba(61, 77, 41, 0.7) url(../assets/hover-img.png) no-repeat center;
 }
-/*---------END WORK-----------*/
+/*---------END WORK-------------------------------*/
 
-/*---------CONTACTS-----------*/
+/*---------CONTACTS-------------------------------*/
 .page-contacts{
 	background:  #75b4aa url(../assets/contacts-back.png) no-repeat;
 	padding-top:5%;
@@ -410,7 +430,6 @@ h2{
 }
 .map{
 	width: 100%;
-	height:220px;
 }
 .form-ask input{
 	height:40px;
@@ -463,3 +482,45 @@ h2{
 	color:#fff;
 }
 /*---------END CONTACTS-----------*/
+
+/*----------------FOOTER----------------*/
+.socialrow{
+	background-color:  #68a097;
+	text-align: center;
+	padding: 40px 0;
+}
+.social-icons-big{
+	display: inline-block;
+	border-radius: 50%;
+	background-color:  #82c8bd;
+	width: 60px;
+	height: 60px;
+	margin:0 3%;
+	background-image: url(../assets/social_icons-big.png);
+	background-repeat: no-repeat;
+}
+.social-icons-big-fb{
+	background-position: 22px center;
+}
+.social-icons-big-fb:hover{
+	background-color: #4f689e;
+}
+.social-icons-big-tw{
+	background-position: -76px center;
+}
+.social-icons-big-tw:hover{
+	background-color: #74c7d5;
+}
+.social-icons-big-gplus{
+	background-position: -179px center;
+}
+.social-icons-big-gplus:hover{
+	background-color: #df5c64;
+}
+.social-icons-big-in{
+	background-position: -277px center;
+}
+.social-icons-big-in:hover{
+	background-color: #3e61af;
+}
+/*---------------END FOOTER-------------*/
