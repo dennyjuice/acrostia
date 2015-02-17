@@ -1,5 +1,24 @@
 jQuery(document).ready(function($){
 	
+	/*---------Different colors for active menu link----*/
+	
+	function waypointMe(id, color, num, off){
+		var waypoints = $(id).waypoint(function(direction) {
+  			$('.nav li').removeClass('nav-active');
+				$('.nav li:nth-child('+num+')').addClass('nav-active');
+				$('.nav li').css({'background-color':  'transparent'});
+				$('.nav-active').css({'background-color':  color});
+		}, { offset : off });}
+	
+	var way = waypointMe;
+	
+	way('#myCarousel', '#74c7d5', 1, '-1%');
+	way('#services', '#df5c64', 2, '1%');
+	way('#about', '#91778e', 3, '1%');
+	way('#work', '#a1ca6c', 4, '1%');
+	way('#contacts', '#82c8bd', 5, '1%');
+	/*---------------------------------------*/
+	
 	/*----------Gallery----------*/
 	$('.work-gallery').magnificPopup({
 		delegate: 'a',
@@ -67,4 +86,20 @@ jQuery(document).ready(function($){
 		tempItem = thisItem;
 	});
 	/*------------END portfolio filter--------------*/
+	
+	// create anchor links
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 300);
+				return false;
+			}
+		}
+	});
+	//---------------------------------------------
+	
 });
